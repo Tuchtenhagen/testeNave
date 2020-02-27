@@ -4,7 +4,7 @@
 // exercicio 1
 // Crie uma função que recebe dois argumentos string e retorna o de maior 
 // comprimento.
-const bigger = (arg1, arg2) => {
+let bigger = (arg1, arg2) => {
   if(arg1.length > arg2.length)
     return arg1;
   else if(arg2.length > arg1.length)
@@ -20,7 +20,11 @@ console.log(bigger('teste string','teste maior string'));
 // Crie uma função que recebe três argumentos, uma função e duas string, 
 // aplique a função nas duas string e imprima o resultado.
 
+const sumLength = (arg1, arg2) => arg1.length + arg2.length;
 
+const test = (funcao, arg1, arg2) => funcao(arg1, arg2);
+
+console.log(test(sumLength, 'testeDeTamanho', 'teste1'));
 
 // exercicio 3
 // Crie uma função que recebe vários argumentos do tipo string e 
@@ -34,7 +38,7 @@ console.log(showStrings('teste1', 'teste2', 'teste3'));
 // Dado a seguinte string 'teste 1 de 2 string 3', 
 // substitua todas as ocorrências de números pelo valor '[removido]'.
 const replaceNumbers = string => {
-  var regex = /[0-9]+/gm;
+  let regex = /[0-9]+/gm;
   const newString = string.replace(regex, '[removido]');
   return console.log(newString);
 }
@@ -128,3 +132,17 @@ const elementsAge = (users) => {
 }
 
 elementsAge(elements);
+
+
+
+// exercicio 11
+// Ordene o array de forma decrescente por idade, 
+// em caso de empate o desempate é pelo id.
+
+
+console.log(users.sort((a,b) => {
+  if(a.idade == b.idade)
+    return parseInt(b.id) - parseInt(a.id);
+  else 
+    return parseInt(b.idade) - parseInt(a.idade);
+}));

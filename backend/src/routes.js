@@ -7,6 +7,7 @@ const routes = express.Router();
 routes.get('/posts', PostsController.index);
 routes.post('/posts', PostsController.store);
 
-routes.post('/comments', PostsController.store);
+routes.post('/posts/:post_id/comments', CommentsController.store);
+routes.get('/posts/:post_id/comments', CommentsController.index);
 
 module.exports = routes;

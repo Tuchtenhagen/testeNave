@@ -9,6 +9,10 @@ class Comments extends Model {
       sequelize: connection
     })
   }
+  
+  static relation(models) {
+    this.belongsTo(models.Posts, { foreignKey: 'post_id', as: 'post' });
+  }
 }
 
 module.exports = Comments;

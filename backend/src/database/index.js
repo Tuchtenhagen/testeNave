@@ -9,4 +9,7 @@ const connection = new Sequelize(dbConfig);
 Posts.init(connection);
 Comments.init(connection);
 
+Comments.relation(connection.models);
+Posts.relation(connection.models);
+
 module.exports = connection;

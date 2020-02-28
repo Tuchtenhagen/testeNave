@@ -10,6 +10,9 @@ class Posts extends Model {
       sequelize: connection
     })
   }
+  static relation(models) {
+    this.hasMany(models.Comments, { foreignKey: 'post_id', as: 'comments' });
+  }
 }
 
 module.exports = Posts;

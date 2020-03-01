@@ -36,6 +36,8 @@ const searchAdress = (endereco) => {
   });
 }
 
-botao.onclick = () => searchAdress(endereco);
+botao.onclick = () => teste = searchAdress(endereco);
+
+
 
 

@@ -1,0 +1,30 @@
+body{
+  font-family: 'arial', 'Arial Narrow', sans-serif;
+}
+
+fieldset {
+  background-color: #E7DFDD;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10%;
+}
+
+input {
+  width: 50%;
+}
+
+button {
+  background-color: #555555;
+  color: #FFFF;
+  font-size: 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  border: none;
+}
+
+button:hover {
+  background-color: #4CAF50; 
+}

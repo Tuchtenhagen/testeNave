@@ -2,7 +2,7 @@
 
 
 ## exercícios 1 - 11
-Para executar os exercícios de 1 a 11, basta acessar o caminho do exercício correspondente e executar o index.html.
+Para executar os exercícios de 1 a 11, basta acessar o caminho do exercício correspondente dentro da pasta **exercicios** e executar o index.html.
 Criei uma interface simples para auxilair na execução dos exercícios.
 
 OBS.: 
